@@ -1,1 +1,3 @@
-console.log('hello world')
+import { info } from './utils/fetchScript.js';
+
+info();
