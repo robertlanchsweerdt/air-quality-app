@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.2",
+    "parcel": "^2.0.0-beta.3.1",
+    "sass": "^1.36.0"
+  }
 }
