@@ -1,0 +1,20 @@
+// include default variable overrides at top of code
+
+
+// Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+// $custom-colors: (
+//   "alt-light": #f2ebfa,
+//   "alt-dark": #522192
+// );
+
+// Merge the maps
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass-watch": "sass --watch ./sass/:styles"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^5.0.2",
-    "parcel": "^2.0.0-beta.3.1",
     "sass": "^1.36.0"
   }
 }
