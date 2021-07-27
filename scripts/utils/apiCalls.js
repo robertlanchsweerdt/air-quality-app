@@ -8,7 +8,7 @@ const AIR_API_CALL =  {
 
     states: `http://api.airvisual.com/v2/states?country=${country}&key=${AIR_VISUAL_API_KEY}`,
 
-   cities: `http://api.airvisual.com/v2/cities?state=${state}}&country=${country}&key=${AIR_VISUAL_API_KEY}`,
+    cities: `http://api.airvisual.com/v2/cities?state=${state}}&country=${country}&key=${AIR_VISUAL_API_KEY}`,
 
     ipLocation:`http://api.airvisual.com/v2/nearest_city?key=${AIR_VISUAL_API_KEY}`,
 

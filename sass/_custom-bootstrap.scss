@@ -1,11 +1,12 @@
 // include default variable overrides at top of code
 
+$primary: #06966c;
 
 // Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
+@import '../node_modules/bootstrap/scss/functions';
 
 // Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
+@import '../node_modules/bootstrap/scss/variables';
 
 // Create your own map
 // $custom-colors: (
@@ -17,4 +18,18 @@
 // $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.card {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.btn {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
