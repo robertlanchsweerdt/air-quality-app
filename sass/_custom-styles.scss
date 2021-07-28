@@ -14,11 +14,11 @@ body {
 .glass {
   position: relative;
 
-  width: min(890px, 97%);
-  height: min(803px, 90vh);
+  width: min(800px, 97%);
+  height: min(803px, 95vh);
 
   background: inherit;
-  border: solid 2px white;
+  border: solid 2px hsl(0, 0%, 80%);
   border-radius: 30px;
 }
 
@@ -40,6 +40,36 @@ body {
 
 #logo-IQAir {
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  right: 20px;
+  bottom: 20px;
+
+  @media (max-width: 500px) {
+    right: 0;
+    bottom: 5px;
+    transform: translateX(-50%);
+  }
+}
+
+.home,
+.search {
+  visibility: hidden;
+}
+
+// .selection {
+//   visibility: hidden;
+// }
+
+#search-results,
+#selected-result {
+  height: 60vh;
+}
+
+#search-results {
+  overflow-y: scroll;
+}
+
+#selected-result {
+  > div {
+    position: relative;
+  }
 }

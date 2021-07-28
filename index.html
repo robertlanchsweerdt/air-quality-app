@@ -30,28 +30,6 @@
         <div class="glass m-auto">
 
             <!-- HOME -->
-            <!-- <div class="home card position-absolute top-50 start-50 translate-middle">
-
-                <div class="card-body text-center d-grid m-auto">
-
-                    <h1 class="card-title display-4 fw-bold mb-4">Welcome to the Air Quality App</h1>
-
-                    <h3 class="card-subtitle mb-1 fw-light">Find the air quality</h3>
-
-                    <h3 class="card-subtitle mb-4 fw-light">anywhere in the United States</h3>
-
-                    <p class="card-text lead">Search by:</p>
-
-                    <div class="d-grid m-auto gap-3 col-md-3">
-                        <button class="btn btn-primary btn-lg">City</button>
-                        <button class="btn btn-primary btn-lg">IP Location</button>
-                    </div>
-
-                </div>
-
-            </div> -->
-
-            <!-- SEARCH -->
             <div class="home card position-absolute top-50 start-50 translate-middle">
 
                 <div class="card-body text-center d-grid m-auto">
@@ -71,6 +49,178 @@
 
                 </div>
 
+            </div>
+
+            <!-- SEARCH -->
+            <div class="search card position-absolute top-0 start-50 translate-middle-x">
+
+                <div class="card-body">
+
+                    <!-- header -->
+                    <div class="d-md-flex align-items-center">
+
+                        <h4 class="card-title fw-light col-md-3 mb-4 mb-md-0">Air Quality App</h4>
+
+                        <div class="input-group input-container">
+
+                            <input type="text" class="form-control rounded-pill" placeholder="enter a U.S. city name"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+
+                            <span class="input-group-text rounded-pill" id="addon-wrapping">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- search results -->
+
+                <div class="glass m-auto mt-2" id="search-results">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            South Bend, Indiana
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Birmingham, Alabama
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Lexington, Kentucky
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            South Bend, Indiana
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Birmingham, Alabama
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Lexington, Kentucky
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            South Bend, Indiana
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Birmingham, Alabama
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Lexington, Kentucky
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            South Bend, Indiana
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Birmingham, Alabama
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
+                            Lexington, Kentucky
+                            <button class="btn btn-primary" type="button">Select</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- buttons -->
+
+                <div class="row d-flex justify-content-around mt-4">
+                    <button class="btn btn-secondary col-3" type="button">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Home Page">
+                            <i class="bi bi-house-door"></i>
+                    </button>
+                    <button class="btn btn-secondary col-3" type="button">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search Another City">
+                            <i class="bi bi-search"></i>
+                    </button>
+                    <button class="btn btn-secondary col-3" type="button">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search by IP Location">
+                            <i class="bi bi-geo-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- USER SELECTION -->
+            <div class="selection card position-absolute top-0 start-50 translate-middle-x">
+
+                <div class="card-body">
+
+                    <!-- header -->
+                    <div class="d-md-flex align-items-center">
+
+                        <h4 class="card-title fw-light col-md-3 mb-4 mb-md-0">Air Quality App</h4>
+
+                    </div>
+
+                </div>
+
+                <!-- search results -->
+
+                <div class="glass m-auto mt-2 p-3" id="selected-result">
+
+                    <div class="inner-container">
+
+                        <div class="row">
+
+                            <div class="col-8">
+
+                                <h2 class="fw-bold text-secondary">South Bend, Indiana</h2>
+
+                                <p class="lead">AIR QUALITY</p>
+
+                            </div>
+
+                            <div class="col-4">
+                                some sun
+                            </div>
+
+                        </div>
+
+
+                        <h3 class="text-secondary">
+                            Health warning of emergency conditions; everyone is more likely to be affected.
+                        </h3>
+
+
+                        <div class="row">
+
+                            <p class="lead col-md-6 col-lg-3 text-secondary">TEMPERATURE</p>
+                            <p class="lead col-md-6 col-lg-3 text-secondary">HUMIDITY</p>
+                            <p class="lead col-md-6 col-lg-3 text-secondary">WIND</p>
+                            <p class="lead col-md-6 col-lg-3 text-secondary">WIND DIRECTION</p>
+                        </div>
+
+                        <p>Time stamp: Sun, Jul 24, 2021 at 03:00 Z</p>
+
+                    </div>
+
+                </div>
+
+                <!-- buttons -->
+
+                <div class="row d-flex justify-content-around mt-4">
+                    <button class="btn btn-secondary col-3" type="button">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Home Page">
+                            <i class="bi bi-house-door"></i>
+                    </button>
+                    <button class="btn btn-secondary col-3" type="button">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search Another City">
+                            <i class="bi bi-search"></i>
+                    </button>
+                    <button class="btn btn-secondary col-3" type="button">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search by IP Location">
+                            <i class="bi bi-geo-alt"></i>
+                    </button>
+                </div>
             </div>
 
             <!-- powered by IQAir -->

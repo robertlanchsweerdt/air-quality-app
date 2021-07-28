@@ -1,6 +1,7 @@
 // include default variable overrides at top of code
 
 $primary: #06966c;
+$secondary: #3d1b12;
 
 // Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import '../node_modules/bootstrap/scss/functions';
@@ -23,13 +24,39 @@ $primary: #06966c;
 .card {
   background-color: transparent;
   border: none;
-  width: 100%;
+  width: 95%;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+.input-group {
+  position: relative;
+
+  input {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 500px rgba(255, 255, 255, 30%);
+  }
+
+  span {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    color: $secondary;
+    border: none;
+  }
 }
 
 .btn {
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &:hover {
     color: #fff;
+  }
+
+  span {
+    display: block;
   }
 }
