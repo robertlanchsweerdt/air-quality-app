@@ -1,7 +1,29 @@
 import { bootstrapTooltip } from './utils/customBootStrap.js';
 
+const btnHome = document.getElementById('btn-home');
+const btnSearch = document.getElementById('btn-search');
+const btnIP = document.getElementById('btn-ip');
+const btnGroup = document.getElementById('btn-group');
+
+const sectionHome = document.querySelector('.home');
+const sectionSearch = document.querySelector('.search');
+const sectionSelection = document.querySelector('.selection');
+
 window.addEventListener('load', () => {
   bootstrapTooltip();
+
+  btnHome.addEventListener('click', () => {
+    sectionHome.style.visibility = 'visible';
+    sectionSearch.style.visibility = 'hidden';
+    sectionSelection.style.visibility = 'hidden';
+    btnGroup.style.visibility = 'hidden';
+  });
+
+  btnSearch.addEventListener('click', () => {
+    sectionHome.style.visibility = 'hidden';
+    sectionSearch.style.visibility = 'visible';
+    sectionSelection.style.visibility = 'hidden';
+  });
 });
 
 // const cityState = [];

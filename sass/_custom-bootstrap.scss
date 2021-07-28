@@ -33,6 +33,7 @@ $secondary: #3d1b12;
 
 .input-group {
   position: relative;
+  width: 60%;
 
   input {
     background-color: transparent;
@@ -45,6 +46,10 @@ $secondary: #3d1b12;
     background-color: transparent;
     color: $secondary;
     border: none;
+  }
+
+  @media (max-width: 700px) {
+    width: 93%;
   }
 }
 

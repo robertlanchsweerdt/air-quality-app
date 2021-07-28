@@ -15,7 +15,8 @@ body {
   position: relative;
 
   width: min(800px, 97%);
-  height: min(803px, 95vh);
+  // height: min(803px, 95vh);
+  height: min(850px, 95vh);
 
   background: inherit;
   border: solid 2px hsl(0, 0%, 80%);
@@ -50,7 +51,10 @@ body {
   }
 }
 
-.home,
+.home {
+  visibility: hidden;
+}
+
 .search {
   visibility: hidden;
 }
@@ -59,14 +63,17 @@ body {
 //   visibility: hidden;
 // }
 
-#search-results,
+#search-results {
+  height: min(550px, 57vh);
+}
+
 #selected-result {
-  height: 60vh;
+  height: 500px;
 }
 
 #search-results,
 #selected-result {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #selected-result {
@@ -79,4 +86,36 @@ body {
   display: flex;
   align-items: center;
   outline: solid 1px red;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 1rem;
+  width: 95%;
+
+  h4 {
+    margin-left: 1em;
+  }
+}
+
+#btn-group {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-48%);
+
+  width: 90%;
+}
+
+// OUTPUT STYLING
+
+#result-metrics > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }

@@ -27,10 +27,10 @@
 
         <!-- start glass -->
         <!-- <div class="glass d-flex flex-column justify-content-center m-auto"> -->
-        <div class="glass m-auto">
+        <main class="glass m-auto">
 
             <!-- HOME -->
-            <div class="home card position-absolute top-50 start-50 translate-middle">
+            <section class="home card position-absolute top-50 start-50 translate-middle">
 
                 <div class="card-body text-center d-grid m-auto">
 
@@ -49,30 +49,21 @@
 
                 </div>
 
-            </div>
+            </section>
 
             <!-- SEARCH -->
-            <div class="search card position-absolute top-0 start-50 translate-middle-x">
+            <section class="search">
 
-                <div class="card-body">
+                <h4 class="fw-light">Air Quality App</h4>
 
-                    <!-- header -->
-                    <div class="d-md-flex align-items-center">
+                <div class="input-group input-group-lg my-3 ms-3">
 
-                        <h4 class="card-title fw-light col-md-3 mb-4 mb-md-0">Air Quality App</h4>
+                    <input type="text" class="form-control rounded-pill" placeholder="enter a U.S. city name"
+                        aria-label="Username" aria-describedby="addon-wrapping">
 
-                        <div class="input-group input-container">
-
-                            <input type="text" class="form-control rounded-pill" placeholder="enter a U.S. city name"
-                                aria-label="Username" aria-describedby="addon-wrapping">
-
-                            <span class="input-group-text rounded-pill" id="addon-wrapping">
-                                <i class="bi bi-search"></i>
-                            </span>
-
-                        </div>
-
-                    </div>
+                    <span class="input-group-text rounded-pill" id="addon-wrapping">
+                        <i class="bi bi-search"></i>
+                    </span>
 
                 </div>
 
@@ -131,41 +122,16 @@
                     </ul>
                 </div>
 
-                <!-- buttons -->
-
-                <div class="row d-flex justify-content-around mt-4">
-                    <button class="btn btn-secondary col-3" type="button">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Home Page">
-                            <i class="bi bi-house-door"></i>
-                    </button>
-                    <button class="btn btn-secondary col-3" type="button">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search Another City">
-                            <i class="bi bi-search"></i>
-                    </button>
-                    <button class="btn btn-secondary col-3" type="button">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search by IP Location">
-                            <i class="bi bi-geo-alt"></i>
-                    </button>
-                </div>
-            </div>
+            </section>
 
             <!-- USER SELECTION -->
-            <div class="selection card position-absolute top-0 start-50 translate-middle-x">
+            <section class="selection">
 
-                <div class="card-body">
-
-                    <!-- header -->
-                    <div class="d-md-flex align-items-center">
-
-                        <h4 class="card-title fw-light col-md-3 mb-4 mb-md-0">Air Quality App</h4>
-
-                    </div>
-
-                </div>
+                <h4 class="card-title fw-light col-md-3 mb-4 mb-md-0">Air Quality App</h4>
 
                 <!-- search results -->
 
-                <div class="glass m-auto mt-2 p-3" id="selected-result">
+                <div class="glass m-auto mt-5 p-3" id="selected-result">
 
                     <div class="inner-container">
 
@@ -175,7 +141,10 @@
 
                                 <h2 class="fw-bold text-secondary">South Bend, Indiana</h2>
 
-                                <p class="lead mt-5">AIR QUALITY</p>
+                                <p class="lead mt-5 text-secondary">
+                                    AIR QUALITY
+                                    <span class="text-secondary h1 ms-3" id="air-quality">21</span>
+                                </p>
 
                             </div>
 
@@ -186,41 +155,55 @@
                         </div>
 
 
-                        <h3 class="text-secondary">
+                        <h3 class="text-secondary my-4">
                             Health warning of emergency conditions; everyone is more likely to be affected.
                         </h3>
 
 
-                        <div class="row">
+                        <div class="row" id="result-metrics">
 
-                            <p class="lead col-md-6 col-lg-3 text-secondary">TEMPERATURE</p>
-                            <p class="lead col-md-6 col-lg-3 text-secondary">HUMIDITY</p>
-                            <p class="lead col-md-6 col-lg-3 text-secondary">WIND</p>
-                            <p class="lead col-md-6 col-lg-3 text-secondary">WIND DIRECTION</p>
+                            <div class="col-sm-6 col-lg-3">
+                                <p class="lead text-secondary">TEMPERATURE</p>
+                                <h3 text-secondary>96</h3>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <p class="lead text-secondary">HUMIDITY</p>
+                                <h3 text-secondary>100%</h3>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <p class="lead text-secondary">WIND</p>
+                                <h3 text-secondary>3 mp/h</h3>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <p class="lead text-secondary">WIND DIRECTION</p>
+                                <h3 text-secondary>NE</h3>
+                            </div>
+
                         </div>
-
-                        <p>Time stamp: Sun, Jul 24, 2021 at 03:00 Z</p>
 
                     </div>
 
+                    <p class="position-absolute bottom-0">Time stamp: Sun, Jul 24, 2021 at 03:00 Z</p>
+
                 </div>
 
-                <!-- buttons -->
+            </section>
 
-                <div class="row d-flex justify-content-around mt-4">
-                    <button class="btn btn-secondary col-3" type="button">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Home Page">
-                            <i class="bi bi-house-door"></i>
-                    </button>
-                    <button class="btn btn-secondary col-3" type="button">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search Another City">
-                            <i class="bi bi-search"></i>
-                    </button>
-                    <button class="btn btn-secondary col-3" type="button">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search by IP Location">
-                            <i class="bi bi-geo-alt"></i>
-                    </button>
-                </div>
+            <!-- buttons -->
+
+            <div class="row d-flex justify-content-around mt-4" id="btn-group">
+                <button class="btn btn-secondary col-3" id="btn-home" type="button">
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Home Page">
+                        <i class="bi bi-house-door"></i>
+                </button>
+                <button class="btn btn-secondary col-3" id="btn-search" type="button">
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search Another City">
+                        <i class="bi bi-search"></i>
+                </button>
+                <button class="btn btn-secondary col-3" id="btn-ip" type="button">
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search by IP Location">
+                        <i class="bi bi-geo-alt"></i>
+                </button>
             </div>
 
             <!-- powered by IQAir -->
@@ -228,10 +211,12 @@
                 <img src="./imgs/Product-by-IQAir.png" alt="IQAir logo">
             </div>
 
-            <!-- end glass  -->
-        </div>
-
+            <!-- end glass -->
     </div>
+
+    <!-- end site-wrapper  -->
+    </div>
+
 </body>
 
 </html>
