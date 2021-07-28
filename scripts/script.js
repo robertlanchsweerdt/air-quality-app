@@ -1,12 +1,8 @@
-import { AIR_API_CALL } from './utils/apiCalls.js';
-import { AIR_VISUAL_API_KEY } from './utils/apiKey.js';
+import { bootstrapTooltip } from './utils/customBootStrap.js';
 
-fetch(
-  'http://api.airvisual.com/v2/cities?state=New York&country=USA&key=aca06d53-4ecd-4733-a7aa-fa5f1d849c83'
-)
-  .then((response) => response.json())
-  .then((result) => console.log(result))
-  .catch((error) => console.log('error', error));
+window.addEventListener('load', () => {
+  bootstrapTooltip();
+});
 
 // const cityState = [];
 

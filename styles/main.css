@@ -10840,12 +10840,19 @@ body {
   height: 60vh;
 }
 
-#search-results {
+#search-results,
+#selected-result {
   overflow-y: scroll;
 }
 
 #selected-result > div {
   position: relative;
+}
+
+.city-temp {
+  display: flex;
+  align-items: center;
+  outline: solid 1px red;
 }
 
 /*# sourceMappingURL=main.css.map */

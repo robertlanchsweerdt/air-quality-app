@@ -64,7 +64,8 @@ body {
   height: 60vh;
 }
 
-#search-results {
+#search-results,
+#selected-result {
   overflow-y: scroll;
 }
 
@@ -72,4 +73,10 @@ body {
   > div {
     position: relative;
   }
+}
+
+.city-temp {
+  display: flex;
+  align-items: center;
+  outline: solid 1px red;
 }
