@@ -89,6 +89,7 @@ function clearSearchScreen() {
   listGroup.textContent = '';
   selectCity.style.visibility = 'hidden';
   searchResultsGlass.style.visibility = 'hidden';
+  userInput.value = '';
   selectState.textContent = '';
   citiesState = [];
 
@@ -181,6 +182,8 @@ async function getAQ(e) {
   const data = await res.json();
   const cityData = data.data;
 
+  console.log(cityData);
+
   displayAQ(cityData);
 }
 
@@ -189,7 +192,7 @@ function displayAQ(cityData) {
   // variables
   const city = cityData.city;
   const state = cityData.state;
-  const airPollution = cityData.current.pollution.aqius; // undefined
+  const airPollution = cityData.current.pollution.aqius;
   const humidity = cityData.current.weather.hu;
   const tempFahr = convertCelciusToFahrenheit(cityData.current.weather.tp);
   const timeStamp = cityData.current.weather.ts;
