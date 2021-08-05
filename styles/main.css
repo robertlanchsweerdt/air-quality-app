@@ -10754,6 +10754,7 @@ textarea.form-control-lg {
 
 .list-group-item {
   background-color: transparent;
+  font-size: 1.5rem;
 }
 
 .form-select {

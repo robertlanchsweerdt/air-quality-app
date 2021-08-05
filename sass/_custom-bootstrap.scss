@@ -4,19 +4,10 @@ $primary: #06966c;
 $secondary: #3d1b12;
 
 // Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import '../node_modules/bootstrap/scss/functions';
+// @import '../node_modules/bootstrap/scss/functions';
 
 // Include remainder of required Bootstrap stylesheets
-@import '../node_modules/bootstrap/scss/variables';
-
-// Create your own map
-// $custom-colors: (
-//   "alt-light": #f2ebfa,
-//   "alt-dark": #522192
-// );
-
-// Merge the maps
-// $theme-colors: map-merge($theme-colors, $custom-colors);
+// @import '../node_modules/bootstrap/scss/variables';
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
@@ -29,6 +20,7 @@ $secondary: #3d1b12;
 
 .list-group-item {
   background-color: transparent;
+  font-size: 1.5rem;
 }
 
 .form-select {
