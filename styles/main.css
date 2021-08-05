@@ -10756,15 +10756,23 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
-.input-group {
-  position: relative;
-  width: 60%;
-}
-.input-group input {
+.form-select {
   background-color: transparent;
   box-shadow: inset 0px 0px 0px 500px rgba(255, 255, 255, 0.3);
 }
-.input-group span {
+
+.input-group,
+.form-select {
+  position: relative;
+  width: 60%;
+}
+.input-group input,
+.form-select input {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 500px rgba(255, 255, 255, 0.3);
+}
+.input-group span,
+.form-select span {
   position: absolute;
   right: 0;
   background-color: transparent;
@@ -10772,7 +10780,8 @@ textarea.form-control-lg {
   border: none;
 }
 @media (max-width: 700px) {
-  .input-group {
+  .input-group,
+.form-select {
     width: 93%;
   }
 }
@@ -10836,16 +10845,24 @@ body {
   }
 }
 
-.home {
-  visibility: hidden;
-}
-
 .search {
   visibility: hidden;
 }
 
 #search-results {
-  height: min(550px, 57vh);
+  visibility: hidden;
+}
+
+.selection {
+  visibility: hidden;
+}
+
+#select-city {
+  visibility: hidden;
+}
+
+#search-results {
+  max-height: 500px;
 }
 
 #selected-result {
@@ -10880,6 +10897,7 @@ section h4 {
 }
 
 #btn-group {
+  visibility: hidden;
   position: absolute;
   bottom: 10%;
   left: 50%;

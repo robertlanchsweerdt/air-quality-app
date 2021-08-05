@@ -31,7 +31,13 @@ $secondary: #3d1b12;
   background-color: transparent;
 }
 
-.input-group {
+.form-select {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 500px rgba(255, 255, 255, 30%);
+}
+
+.input-group,
+.form-select {
   position: relative;
   width: 60%;
 

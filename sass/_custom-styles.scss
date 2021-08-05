@@ -15,7 +15,6 @@ body {
   position: relative;
 
   width: min(800px, 97%);
-  // height: min(803px, 95vh);
   height: min(850px, 95vh);
 
   background: inherit;
@@ -51,20 +50,28 @@ body {
   }
 }
 
-.home {
-  visibility: hidden;
-}
+// .home {
+//   visibility: hidden;
+// }
 
 .search {
   visibility: hidden;
 }
 
-// .selection {
-//   visibility: hidden;
-// }
+#search-results {
+  visibility: hidden;
+}
+
+.selection {
+  visibility: hidden;
+}
+
+#select-city {
+  visibility: hidden;
+}
 
 #search-results {
-  height: min(550px, 57vh);
+  max-height: 500px;
 }
 
 #selected-result {
@@ -103,6 +110,8 @@ section {
 }
 
 #btn-group {
+  visibility: hidden;
+
   position: absolute;
   bottom: 10%;
   left: 50%;

@@ -34,7 +34,7 @@
 
                 <div class="card-body text-center d-grid m-auto">
 
-                    <h1 class="card-title display-4 fw-bold mb-4">Welcome to the Air Quality App</h1>
+                    <h1 class="card-title display-3 fw-bold mb-4">Welcome to the Air Quality App</h1>
 
                     <h3 class="card-subtitle mb-1 fw-light">Find the air quality</h3>
 
@@ -44,7 +44,6 @@
 
                     <div class="d-grid m-auto gap-3 col-md-3">
                         <button class="btn btn-primary btn-lg" id="city-btn">City</button>
-                        <button class="btn btn-primary btn-lg" id="ip-btn">IP Location</button>
                     </div>
 
                 </div>
@@ -56,10 +55,15 @@
 
                 <h4 class="fw-light">Air Quality App</h4>
 
-                <div class="input-group input-group-lg my-3 ms-3">
+                <select class="ms-3 rounded-pill form-select form-select-lg mb-3" id="select-state"
+                    aria-label="Choose a U.S. state">
+                    <option>Choose a U.S. state</option>
+                </select>
+
+                <div class="input-group input-group-lg my-3 ms-3" id="select-city">
 
                     <input type="text" class="form-control rounded-pill" placeholder="enter a U.S. city name"
-                        aria-label="Username" aria-describedby="addon-wrapping">
+                        aria-label="enter U.S. city name" aria-describedby="addon-wrapping">
 
                     <span class="input-group-text rounded-pill" id="addon-wrapping">
                         <i class="bi bi-search"></i>
@@ -71,54 +75,6 @@
 
                 <div class="glass m-auto mt-2" id="search-results">
                     <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            South Bend, Indiana
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Birmingham, Alabama
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Lexington, Kentucky
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            South Bend, Indiana
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Birmingham, Alabama
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Lexington, Kentucky
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            South Bend, Indiana
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Birmingham, Alabama
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Lexington, Kentucky
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            South Bend, Indiana
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Birmingham, Alabama
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center px-md-5">
-                            Lexington, Kentucky
-                            <button class="btn btn-primary" type="button">Select</button>
-                        </li>
                     </ul>
                 </div>
 
@@ -139,7 +95,7 @@
 
                             <div class="col-8">
 
-                                <h2 class="fw-bold text-secondary">South Bend, Indiana</h2>
+                                <h2 class="fw-bold text-secondary" id="search-city-state">South Bend, Indiana</h2>
 
                                 <p class="lead mt-5 text-secondary">
                                     AIR QUALITY
@@ -148,14 +104,10 @@
 
                             </div>
 
-                            <div class="col-4">
-                                some sun
-                            </div>
-
                         </div>
 
 
-                        <h3 class="text-secondary my-4">
+                        <h3 class="text-secondary my-4" id="aq-description">
                             Health warning of emergency conditions; everyone is more likely to be affected.
                         </h3>
 
@@ -164,26 +116,21 @@
 
                             <div class="col-sm-6 col-lg-3">
                                 <p class="lead text-secondary">TEMPERATURE</p>
-                                <h3 text-secondary>96</h3>
+                                <h3 class="text-secondary" id="temp">96</h3>
                             </div>
                             <div class="col-sm-6 col-lg-3">
                                 <p class="lead text-secondary">HUMIDITY</p>
-                                <h3 text-secondary>100%</h3>
+                                <h3 class="text-secondary " id="humidity">100%</h3>
                             </div>
                             <div class="col-sm-6 col-lg-3">
                                 <p class="lead text-secondary">WIND</p>
-                                <h3 text-secondary>3 mp/h</h3>
+                                <h3 class="text-secondary" id="wind-speed">3 mp/h</h3>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <p class="lead text-secondary">WIND DIRECTION</p>
-                                <h3 text-secondary>NE</h3>
-                            </div>
-
                         </div>
 
                     </div>
 
-                    <p class="position-absolute bottom-0">Time stamp: Sun, Jul 24, 2021 at 03:00 Z</p>
+                    <p class="position-absolute bottom-0" id="time-stamp">Time stamp: Sun, Jul 24, 2021 at 03:00 Z</p>
 
                 </div>
 
@@ -199,10 +146,6 @@
                 <button class="btn btn-secondary col-3" id="btn-search" type="button">
                     <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search Another City">
                         <i class="bi bi-search"></i>
-                </button>
-                <button class="btn btn-secondary col-3" id="btn-ip" type="button">
-                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Search by IP Location">
-                        <i class="bi bi-geo-alt"></i>
                 </button>
             </div>
 
