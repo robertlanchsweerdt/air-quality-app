@@ -5,7 +5,7 @@ const state = 'Indiana';
 const country = 'USA';
 
 const AIR_API_CALL = {
-  states: `http://api.airvisual.com/v2/states?country=${country}&key=${AIR_VISUAL_API_KEY}`,
+  states: `https://api.airvisual.com/v2/states?country=${country}&key=${AIR_VISUAL_API_KEY}`,
 
   cities: `http://api.airvisual.com/v2/cities?state=${state}}&country=${country}&key=${AIR_VISUAL_API_KEY}`,
 

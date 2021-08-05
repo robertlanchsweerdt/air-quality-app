@@ -132,7 +132,7 @@ async function fetchStates() {
 // fetch cities
 async function fetchCities(selectedState) {
   const res = await fetch(
-    `http://api.airvisual.com/v2/cities?state=${selectedState}&country=USA&key=${AIR_VISUAL_API_KEY}`
+    `https://api.airvisual.com/v2/cities?state=${selectedState}&country=USA&key=${AIR_VISUAL_API_KEY}`
   );
 
   const data = await res.json();
@@ -177,7 +177,7 @@ async function getAQ(e) {
   const selectedState = e.target.parentElement.dataset['state'];
 
   const res = await fetch(
-    `http://api.airvisual.com/v2/city?city=${selectedCity}&state=${selectedState}&country=USA&key=${AIR_VISUAL_API_KEY}`
+    `https://api.airvisual.com/v2/city?city=${selectedCity}&state=${selectedState}&country=USA&key=${AIR_VISUAL_API_KEY}`
   );
   const data = await res.json();
   const cityData = data.data;
